@@ -161,28 +161,35 @@ color: #404bbf;
 /* Hero 1*/
 
 
-.hero {
+ .hero {
     background-color:  #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
-            url(../images/people-office.jpg);
+            url(../images/Dark-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 72px 0;
+    min-width: 320px;
     margin: 0 auto;
-   
-    
 }
 
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) ,
+ (min-resolution: 2ddpx) {
+.hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/Dark-mobile2x.jpg);
+}
+}
 .hero-title {
     color:  #FFF;
-        font-size: 56px;
-        line-height: 1.07;
+        font-size: 36px;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         text-align: center;
         max-width: 496px;
         margin: 0 auto;
+        margin-bottom: 72px;
        
        
         
@@ -289,7 +296,6 @@ border: 1px solid #8E8F99;
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 24px; */
     gap: 72px;
    
 }
@@ -848,6 +854,11 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
     }
 
+    .team > .container{
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
     .portfolio-item{
         width: calc((100% - 24px) / 2);
     }
@@ -867,12 +878,38 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         .team-list{
             gap: 24px;
         }
+
+                .hero{
+                padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/Dark-tablet.jpg);
+                }
+
+                                @media screen and (min-device-pixel-ratio: 2),
+                                (min-resolution: 192dpi),
+                                (min-resolution: 2ddpx) {
+                                    .hero {
+                                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                                            url(../images/Dark-tablet2x.jpg);
+                                    }
+                                }
+
+      .hero-title{
+        font-size: 56px;
+        line-height: 1.07;
+      }
 }
     
 @media screen and (min-width: 1158px) {
     .container{
         width: 1158px;
     }
+
+         .team>.container {
+          width: 1440px;
+          padding-left: 156px;
+          padding-right: 156px;
+         }
 
     .portfolio{
         padding-top: 120px;
@@ -908,7 +945,25 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         }    
     
         .team-list{
-        gap: 24px;
+   
         flex-wrap: nowrap;
         }
+                .team-title{
+                    margin-bottom: 0 ;
+                }
+
+        .hero{
+        padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+        }
+
+                @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2ddpx) {
+                    .hero {
+                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                            url(../images/people-office2x.jpg);
+                    }
+                }
 }
