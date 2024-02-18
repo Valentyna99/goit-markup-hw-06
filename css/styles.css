@@ -637,6 +637,8 @@ color: #F4F4FD;
         max-width: 264px;
         min-width: 264px;
     margin-bottom: 72px;
+
+
 }
 
 .footer-icon-link{
@@ -685,7 +687,9 @@ color: #F4F4FD;
 
 .footer-wrapper{
 display: flex;
-align-items: baseline;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 
 .footer-icon-list{
